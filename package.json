@@ -1,0 +1,29 @@
+{
+  "name": "e20incentive",
+  "version": "0.0.1",
+  "description": "Generic smart contract to incentive token transactions",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fakel/E20Incentive.git"
+  },
+  "keywords": [
+    "erc20",
+    "solidity"
+  ],
+  "author": "Fares A. Akel C.",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/fakel/E20Incentive/issues"
+  },
+  "homepage": "https://github.com/fakel/E20Incentive#readme",
+  "dependencies": {
+    "openzeppelin-solidity": "2.3.0"
+  }
+}
