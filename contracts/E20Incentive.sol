@@ -1,7 +1,7 @@
 pragma solidity 0.5.11;
 
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/math/SafeMath.sol";
+import "openzeppelin-solidity/contracts/token/ERC20/IERC20.sol";
+import "openzeppelin-solidity/contracts/math/SafeMath.sol";
 
 /**
  * @title E20 Incentive contract
@@ -35,7 +35,7 @@ contract E20Incentive {
     mapping (address=>UserAccount) public userAccounts;
 
     //Total contract balance handler
-    uint contractUsersBalance;
+    uint private contractUsersBalance;
 
     //EVENTS
     event SessionClaim(address indexed _user, uint _amount, uint round);
@@ -53,6 +53,7 @@ contract E20Incentive {
      * @param _intRounds interest rounds per session
      * @param _bonusRate bonus interest rate multiplied by 1000
      * @param _claimTime time per round in epoch format
+     * @param _platformWallet initial address of platform manager
      */
     constructor(
         IERC20 _tokenAddress,
@@ -62,7 +63,8 @@ contract E20Incentive {
         uint _intRate,
         uint _intRounds,
         uint _bonusRate,
-        uint _claimTime
+        uint _claimTime,
+        address payable _platformWallet
         ) public {
         tokenAddress = _tokenAddress;
         ethFee = _ethFee;

@@ -8,6 +8,7 @@
 
 # Truffle
 build
+bin
 
 # Logs
 logs
@@ -110,3 +111,6 @@ public
 
 # TernJS port file
 .tern-port
+config.json
+parametros-sinergiamining.org.pdf
+summary.pdf

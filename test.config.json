@@ -1,0 +1,9 @@
+{
+  "_ethFee": "40000000000000000",
+  "_minToken": "20000000000",
+  "_maxToken": "100000000000",
+  "_intRate": 10,
+  "_intRounds": 4,
+  "_bonusRate": 20,
+  "_claimTime": 0
+}
